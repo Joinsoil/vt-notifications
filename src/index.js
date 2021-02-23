@@ -1,6 +1,8 @@
-const VTNotification = require("/VTNotification.vue");
-const VTNotificationGroup = require("/VTNotificationGroup.vue");
-const methods = require('/notifications.js');
+const path = require('path');
+path.resolve(__dirname, './dist')
+const VTNotification = require(path.resolve(__dirname, "./VTNotification.vue"));
+const VTNotificationGroup = require(path.resolve(__dirname, "./VTNotificationGroup.vue"));
+const methods = require(path.resolve(__dirname, './notifications.js'));
 
 let installed = false;
 
