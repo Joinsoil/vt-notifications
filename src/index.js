@@ -1,10 +1,10 @@
-import VTNotification from "./VTNotification.vue"
-import VTNotificationGroup from "./VTNotificationGroup.vue"
-import { methods } from './notifications.js'
+const VTNotification = require("./VTNotification.vue");
+const VTNotificationGroup = require("./VTNotificationGroup.vue");
+const methods = require('./notifications.js');
 
-let installed = false
+let installed = false;
 
-export default {
+module.exports = {
   install(Vue) {
     if (installed) return
     Vue.component('notification', VTNotification)
