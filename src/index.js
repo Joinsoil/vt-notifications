@@ -1,11 +1,11 @@
-const path = require('path');
-const VTNotification = require("./VTNotification.vue");
-const VTNotificationGroup = require("./VTNotificationGroup.vue");
-const methods = require("./notifications.js");
+const path = require('path')
+const VTNotification = require("./VTNotification.vue")
+const VTNotificationGroup = require("./VTNotificationGroup.vue")
+const methods = require("./notifications.js")
 
-let installed = false;
+let installed = false
 
-module.exports = {
+export default {
   install(Vue) {
     if (installed) return
     Vue.component('notification', VTNotification)
