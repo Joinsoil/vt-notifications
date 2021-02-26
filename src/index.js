@@ -1,6 +1,6 @@
 const VTNotification = require("./VTNotification.vue")
 const VTNotificationGroup = require("./VTNotificationGroup.vue")
-const methods = require("./notifications.js")
+import { methods } from './notifications.js'
 
 let installed = false
 
